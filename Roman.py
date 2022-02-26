@@ -26,3 +26,32 @@ def romanToInt(self, s: str) -> int: #Function to Convert Roman to Integers. Wri
             fin = fin + val
         prev = val
     return fin
+
+def intToRoman(self, num: int) -> str:  # method created for changing Integers to Roman Numbers
+    sym = {
+        1: "I",
+        4: "IV",
+        5: "V",
+        9: "IX",
+        10: "X",
+        40: "XL",
+        50: "L",  # All possible set of roman numbers is assigned to respective integers
+        90: "XC",  # Function writtern by Bhagya Rishiroop Boda
+        100: "C",
+        400: "CD",
+        500: "D",
+        900: "CM",
+        1000: "M"
+
+    }
+
+    values = sym.keys()
+    result = []
+
+    for val in reversed(values):
+        quo, num = divmod(num, val)
+        if quo > 0:
+            temp = [sym[val]] * quo
+            result.extend(temp)
+
+    return ''.join(result)  # gives the resulting roman number
