@@ -21,7 +21,7 @@ def romanToInt(self, s: str) -> int: #Function to Convert Roman to Integers. Wri
     for i in s:                     #Iterating Each digit
         val = self.strval(i)        #Calling the Util fucntion to parse each digit
         if val>prev:
-            fin = fin - 2*prev + val
+            fin = fin - 2*prev + val  #Editor used is VSCODE
         else:
             fin = fin + val
         prev = val
@@ -37,7 +37,7 @@ def intToRoman(self, num: int) -> str:  # method created for changing Integers t
         40: "XL",
         50: "L",  # All possible set of roman numbers is assigned to respective integers
         90: "XC",  # Function writtern by Bhagya Rishiroop Boda
-        100: "C",
+        100: "C",  #Editor used is Pycharm
         400: "CD",
         500: "D",
         900: "CM",
