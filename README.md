@@ -1,4 +1,6 @@
 # PairProgramming by
 
 Sai Sanath Krishnappagari
-Rishi Boda
+Bhagya Rishiroop Boda
+
+This is a PairProgramming exercise for Software Engineering (CS5704) Course.
